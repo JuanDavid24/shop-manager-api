@@ -29,8 +29,8 @@ const getAllProducts = async () => {
 };
 
 const saveProduct = async (product) => {
-  const newProduct = await addDoc(productsCollection, product);
-  return newProduct.id;
+  const { id } = await addDoc(productsCollection, product);
+  return id;
 };
 
 const deleteProduct = async (id) => {

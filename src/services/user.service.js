@@ -1,22 +1,20 @@
 // services
 import userModel from '../models/user.model.js'
 
-const getAll = async () => {
-  const users = await userModel.getAllUsers()
-  return users;
-};
+const getAll = async () =>
+  await userModel.getAllUsers();
 
-const getById = async (id) => {
-  const user = await userModel.getUserById(id)
-  return user
-}
+
+const getById = async (id) =>
+  await userModel.getUserById(id);
+
 
 const create = async (user) => {
   const id = await userModel.saveUser(user)
   return { id }
 }
 
-const deleteUser = async (id) => 
+const deleteUser = async (id) =>
   await userModel.deleteUser(id);
 
 export default { getAll, getById, create, deleteUser };

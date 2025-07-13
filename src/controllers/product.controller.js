@@ -18,9 +18,9 @@ const getProductById = async (req, res) => {
     const id = req.params.id;
     const product = await productService.getById(id);
 
-    if (product.length === 0)
+    if (!product)
       return res.status(404).json({ message: "No se encontró el producto" });
-    res.status(200).json({ message: "Lista de productos", payload: product });
+    res.status(200).json({ message: "Producto", payload: product });
   } catch (error) {
     res
       .status(500)
@@ -30,9 +30,11 @@ const getProductById = async (req, res) => {
 
 const createProduct = async (req, res) => {
   const { name, description, color, price, inStock } = req.body;
+  console.log({ name, description, color, price, inStock });
+  
   try {
     // parametros obligatorios
-    if (!name || !price || !inStock) {
+    if (!name || !price || inStock === undefined) {
       return res
         .status(400)
         .json({ message: "No se enviaron todos los campos necesarios" });

@@ -50,8 +50,8 @@ const createUser = async (req, res) => {
 const deleteUser = async (req, res) => {
   try {
     const id = req.params.id;
-    const user = await userService.deleteUser(id);
-    res.status(200).json({ message: "Usuario eliminado" });
+    await userService.deleteUser(id);
+    res.status(200).json({ message: "Usuario eliminado", payload: { id } });
   } catch (error) {
     res
       .status(500)

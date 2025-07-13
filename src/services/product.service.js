@@ -1,16 +1,16 @@
 // services
-import deleteProduct from '../models/product.model.js'
+import productModel from '../models/product.model.js'
 
 const getAll = async () => 
-  await deleteProduct.getAllProducts();
+  await productModel.getAllProducts();
 
 const getById = async (id) => 
-  await deleteProduct.getProductById(id);
+  await productModel.getProductById(id);
 
 const create = async (product) => 
-  await deleteProduct.saveProduct(product);
+  await productModel.saveProduct(product);
 
 const deleteById = async (id) => 
-  await deleteProduct.deleteProduct(id);
+  await productModel.deleteProduct(id);
 
 export default { getAll, getById, create, deleteById };

@@ -29,16 +29,11 @@ const getAllUsers = async () => {
 };
 
 const saveUser = async (user) => {
-  const newUser = await addDoc(usersCollection, user);
-  return newUser.id;
+  const { id } = await addDoc(usersCollection, user);
+  return id;
 };
 
-const deleteUser = async (id) => {
-  const res = await deleteDoc(doc(usersCollection, id));
-  console.log(res);
-  return res
-  p
-
-}
+const deleteUser = async (id) => 
+  await deleteDoc(doc(usersCollection, id));
 
 export default { getUserById, getAllUsers, saveUser, deleteUser };
