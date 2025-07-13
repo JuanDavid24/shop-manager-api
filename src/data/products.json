@@ -1,0 +1,26 @@
+[
+  {
+    "id": "product1",
+    "name": "bola de tenis",
+    "color": "verde",
+    "price": 3000
+  },
+  {
+    "id": "product2",
+    "name": "bolita para michi",
+    "color": "rosa y blanco",
+    "price": 4500
+  },
+  {
+    "id": "product3",
+    "name": "caja de arena",
+    "color": "negro y blanco",
+    "price": 35000
+  },
+  {
+    "id": "product4",
+    "name": "rata de juguete",
+    "color": "blanco",
+    "price": 2300
+  }
+]

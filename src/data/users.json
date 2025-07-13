@@ -1,0 +1,22 @@
+[
+  {
+    "id": "user1",
+    "name": "Bolasaurio",
+    "email": "boladino@kawaii.com"
+  },
+  {
+    "id": "user2",
+    "name": "Burbulina",
+    "email": "medusa@kawaii.com"
+  },
+  {
+    "id": "user3",
+    "name": "Fantasmuelo",
+    "email": "chimuelo_mayor@kawaii.com"
+  },
+  {
+    "id": "user4",
+    "name": "Fantasmuelo baby",
+    "email": "fantasbaby@kawaii.com"
+  }
+]
