@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //routes
 app.get("/", (req, res) => {
-  res.json({ title: "Home Page" });
+  res.json({ title: "Shop Manager API" });
 });
 app.use("/api/users", userRoutes);
 app.use("/api/products", productRoutes);
