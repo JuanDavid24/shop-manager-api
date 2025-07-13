@@ -1,6 +1,6 @@
-# Products API
+# Shop Manager API
 
-Este proyecto es una API RESTful para la gestión de productos y usuarios, desarrollada con Node.js y Express. Utiliza Firebase como base de datos para almacenar la información.
+Este proyecto es una API RESTful para la gestión de productos y usuarios de una tienda, desarrollada con Node.js y Express. Utiliza Firebase como base de datos para almacenar la información.
 
 ## Tecnologías utilizadas
 
