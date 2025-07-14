@@ -1,6 +1,6 @@
 # Shop Manager API
 
-## Coleccion de Postman
+## Tests de Postman
 
 Esta carpeta contiene la colección de Postman para el proyecto **shop-manager-api**.
 
@@ -22,6 +22,7 @@ La sección **Overview** de la colección incluye una descripción detallada de 
 ### Notas
 
 - La colección cubre casos exitosos y de error para los endpoints principales.
+- La variable `BASE_URL` tiene la URL del proyecto desplegado en Vercel. Si se desea correrlo y probarlo en localhost, se debe cambiar el valor de la misma.
 - Luego de crear un **producto** o **usuario**:
   - Se actualizan las variables `product_id` y `user_id`.
   - Se puede revisar que haya sido creado directamente ejecutando el request "**_get by id_**" asociado.

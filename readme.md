@@ -2,6 +2,10 @@
 
 Este proyecto es una API RESTful para la gestión de productos y usuarios de una tienda, desarrollada con Node.js y Express. Utiliza Firebase como base de datos para almacenar la información.
 
+## Demo
+
+La API se encuentra desplegada en Vercel: [Shop Manager API](https://shop-manager-api.vercel.app/)
+
 ## Tecnologías utilizadas
 
 - Node.js
@@ -20,9 +24,10 @@ Este proyecto es una API RESTful para la gestión de productos y usuarios de una
   Obtiene un producto por su ID.
 
 - `POST /api/products/create`  
-  Crea un nuevo producto.  
+  Crea un nuevo producto.
 
   **Body:**
+
   ```json
   {
     "name": "Nombre del producto",
@@ -32,20 +37,22 @@ Este proyecto es una API RESTful para la gestión de productos y usuarios de una
     "color": "Color opcional"
   }
   ```
+
 - `DELETE /api/products/:id`
   Elimina un producto por su ID.
 
 ### Usuarios
 
 - `GET /api/users`
-Obtiene la lista de todos los usuarios.
+  Obtiene la lista de todos los usuarios.
 
 - `GET /api/users/:id`
-Obtiene un usuario por su ID.
+  Obtiene un usuario por su ID.
 
 - `POST /api/users/create`
-Crea un nuevo usuario.
-**Body:**
+  Crea un nuevo usuario.
+  **Body:**
+
   ```json
   {
     "name": "Nombre del usuario",
@@ -54,19 +61,25 @@ Crea un nuevo usuario.
   ```
 
 - `DELETE /api/users/:id`
-Elimina un usuario por su ID.
+  Elimina un usuario por su ID.
 
 Cómo levantar el proyecto
+
 1. Clona el repositorio.
 2. Instala las dependencias:
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
+
 3. Configura las variables de entorno en el archivo .env con las credenciales de Firebase (usar .env.example como referencia).
 4. Inicia el servidor en modo desarrollo:
-O en modo producción:
-    ```bash
+   O en modo producción:
+   `bash
     npm start
-    ```
+    `
 5. El servidor estará disponible en http://localhost:3000.
+
+## Tests Postman
+
+Se encuentran en la carpeta [postman](./postman/). Revisar la documentación allí presente para más información.
